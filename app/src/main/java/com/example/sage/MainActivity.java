@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         start.setOnClickListener(v -> goToLoginActivity());
     }
 
-    public void goToLoginActivity(){
+    private void goToLoginActivity(){
         Intent loginActivity = new Intent(getApplicationContext(),LoginActivity.class);
         startActivity(loginActivity);
     }

@@ -4,23 +4,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        Button start = findViewById(R.id.start);
-        start.setOnClickListener(v -> goToLoginActivity());
+        Button login = findViewById(R.id.login);
+        login.setOnClickListener(v -> login());
+
+        Button signup = findViewById(R.id.signup);
+        signup.setOnClickListener(v -> goToSignUpActivity());
+
     }
 
-    public void goToLoginActivity(){
+    public void goToSignUpActivity(){
         Intent loginActivity = new Intent(getApplicationContext(),LoginActivity.class);
         startActivity(loginActivity);
     }
-}
 
+    public void login(){
+
+    }
+}

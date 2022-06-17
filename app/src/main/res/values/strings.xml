@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sage</string>
+    <string name="Handful">Handful</string>
+    <string name="sage">Sage</string>
+    <string name="never_kill_your_plants_again">Never kill your plants again.</string>
+    <string name="start">Start</string>
 </resources>
